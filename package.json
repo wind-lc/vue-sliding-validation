@@ -1,10 +1,18 @@
 {
   "name": "vue-sliding-validation",
-  "version": "0.1.0",
+  "version": "0.1.6",
   "description": "vue图片滑动验证码",
   "main": "lib/vue-sliding-validation.umd.min.js",
   "keyword": "vue-sliding-validation sliding-validation validation",
   "private": false,
+  "author": "wind-lc",
+  "license": "ISC",
+  "homepage": "https://github.com/wind-lc/vue-sliding-validation",
+  "bugs": "https://github.com/wind-lc/vue-sliding-validation",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wind-lc/vue-sliding-validation.git"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

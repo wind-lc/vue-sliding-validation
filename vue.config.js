@@ -1,3 +1,4 @@
+const merge = require('webpack-merge')
 module.exports = {
   // 修改 src 为 examples
   pages: {
@@ -7,18 +8,15 @@ module.exports = {
       filename: 'index.html'
     }
   },
-  // 扩展 webpack 配置，使 packages 加入编译
+  // 扩展 webpack 配置
   chainWebpack: config => {
     config.module
-      .rule('js')
-      .include
-      .add('/packages/')
-      .end()
-      .use('babel')
-      .loader('babel-loader')
+      .rule('images')
+      .use('url-loader')
       .tap(options => {
-        // 修改它的选项...
-        return options
+        return merge(options, {
+          limit: 10000
+        })
       })
   }
 }

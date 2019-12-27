@@ -142,6 +142,7 @@ export default {
       }
       img.onerror = e => {
         console.log('验证码图加载失败')
+        console.log(e)
       }
       return img
     },
@@ -310,9 +311,6 @@ export default {
     margin: 0;
     box-sizing: border-box;
   }
-  .sliding-validation-wrapper-error {
-    animation: errorMove 0.25s linear 2;
-  }
   .sliding-validation-top {
     display: flex;
     align-items: center;
@@ -479,6 +477,9 @@ export default {
     background-color: #1890ff;
     color: #fff;
   }
+}
+.sliding-validation-wrapper-error {
+  animation: errorMove 0.25s linear 2;
 }
 @keyframes errorMove {
   0% {
