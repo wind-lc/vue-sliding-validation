@@ -1,29 +1,22 @@
 # vue-sliding-validation
 
-## Project setup
+## 安装组件
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+npm install vue-sliding-validation
 ```
 
-### Compiles and minifies for production
+### 使用组件
 ```
-npm run build
-```
+main.js中：
+import vueSlidingValidation from 'vue-sliding-validation'
+import 'vue-sliding-validation/lib/vue-sliding-validation.css'
+Vue.use(vueSlidingValidation)
+组件中：
+<SlidingValidation :showSlidingValidation="showSlidingValidation" @handleSlidingValidation="handleSlidingValidation"></SlidingValidation>
+showSlidingValidation  显示隐藏组件
+handleSlidingValidation   隐藏组件事件
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
 ```
 
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[github](https://github.com/wind-lc/vue-sliding-validation)
