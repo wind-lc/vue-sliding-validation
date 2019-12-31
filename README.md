@@ -2,7 +2,7 @@
 
 ## 安装组件
 ```
-npm install vue-sliding-validation
+npm install -save vue-sliding-validation
 ```
 
 ### 使用组件

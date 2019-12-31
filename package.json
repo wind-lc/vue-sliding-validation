@@ -1,6 +1,6 @@
 {
   "name": "vue-sliding-validation",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "vue图片滑动验证码",
   "main": "lib/vue-sliding-validation.umd.min.js",
   "keyword": "vue-sliding-validation sliding-validation validation",
